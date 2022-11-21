@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Social Media Dashboard With Theme Switcher</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="./lib/anime.min.js" defer></script>
+  <script src="main.js" defer></script>
+</head>
+
+<body id="body">
+  <!-- CONTAINER -->
+  <div class="container">
+    <!-- HEADER AREA -->
+    <header id="header" class="header">
+      <div class="header_wrapper">
+        <article id="header_border" class="header_info">
+          <h1 id="title" class="header_info_title">Social Media Dashboard</h1>
+          <h2 class="header_info_subtitle">Total Followers: 23,004</h2>
+        </article>
+        <div class="switch_mode">
+          <span class="switch_mode_title">Dark Mode</span>
+          <label class="switch">
+            <input type="checkbox" checked>
+            <span id="switch" class="slider round"></span>
+          </label>
+        </div>
+      </div>
+    </header>
+    <!-- CONTENT AREA -->
+    <main class="content">
+      <!-- TOP CARDS -->
+      <div class="cards">
+        <!-- CARD FACEBOOK -->
+        <div class="card">
+          <figure class="card_logo">
+            <img src="images/icon-facebook.svg" alt="facebook icon" class="card_logo_icon">
+            <span class="card_logo_username">@nathanf</span>
+          </figure>
+          <h2 class="card_followers_number card1">1987</h2>
+          <h6 class="card_followers_title">FOLLOWERS</h6>
+          <div class="card_footer">
+            <img src="images/icon-up.svg" alt="icon up">
+            <span class="card_footer_title">12 Today</span>
+          </div>
+        </div>
+        <!-- CARD TWITTER -->
+        <div class="card">
+          <figure class="card_logo">
+            <img src="images/icon-twitter.svg" alt="twitter icon" class="card_logo_icon">
+            <span class="card_logo_username">@nathanf</span>
+          </figure>
+          <h2 class="card_followers_number card2">1044</h2>
+          <h6 class="card_followers_title">FOLLOWERS</h6>
+          <div class="card_footer">
+            <img src="images/icon-up.svg" alt="icon up">
+            <span class="card_footer_title">99 Today</span>
+          </div>
+        </div>
+        <!-- CARD INSTAGRAM -->
+        <div class="card_instagram_bg">
+          <div class="card">
+            <figure class="card_logo">
+              <img src="images/icon-instagram.svg" alt="instagram icon" class="card_logo_icon">
+              <span class="card_logo_username">@realnathanf</span>
+            </figure>
+            <h2 class="card_followers_number card3">11k</h2>
+            <h6 class="card_followers_title">FOLLOWERS</h6>
+            <div class="card_footer">
+              <img src="images/icon-up.svg" alt="icon up">
+              <span class="card_footer_title">1099 Today</span>
+            </div>
+          </div>
+        </div>
+         <!-- CARD YOUTUBE -->
+         <div class="card">
+          <figure class="card_logo">
+            <img src="images/icon-youtube.svg" alt="twitter icon" class="card_logo_icon">
+            <span class="card_logo_username">Nathan F.</span>
+          </figure>
+          <h2 class="card_followers_number card4">8239</h2>
+          <h6 class="card_followers_title">SUBSCRIBERS</h6>
+          <div class="card_footer">
+            <img src="images/icon-down.svg" alt="icon up">
+            <span class="card_footer_title">144 Today</span>
+          </div>
+        </div>
+      </div>
+      <!-- BOTTOM CARDS -->
+      <div class="bottom_cards">
+        <h2 id="bottom_title" class="bottom_cards_title">Overview - Today</h2>
+        <!-- BOTTOM CARD FACEBOOK 1 -->
+        <div class="bottom_card">
+          <article class="bottom_card_header">
+            <h2 class="bottom_card_header_title">Page Views</h2>
+            <img src="images/icon-facebook.svg" alt="icon facebook" class="bottom_card_header_icon">
+          </article>
+          <article class="bottom_card_footer">
+            <h2 class="bottom_card_footer_value b_card1">87</h2>
+            <div class="bottom_card_footer_percent">
+              <img src="images/icon-up.svg" alt="icon up" class="bottom_card_footer_percent_icon">
+              <span class="bottom_card_footer_percent_value">3%</span>
+            </div>
+          </article>
+        </div>
+        <!-- BOTTOM CARD FACEBOOK 2 -->
+        <div class="bottom_card">
+          <article class="bottom_card_header">
+            <h2 class="bottom_card_header_title">Likes</h2>
+            <img src="images/icon-facebook.svg" alt="icon facebook" class="bottom_card_header_icon">
+          </article>
+          <article class="bottom_card_footer">
+            <h2 class="bottom_card_footer_value b_card2">52</h2>
+            <div class="bottom_card_footer_percent">
+              <img src="images/icon-down.svg" alt="icon up" class="bottom_card_footer_percent_icon">
+              <span class="bottom_card_footer_percent_value">2%</span>
+            </div>
+          </article>
+        </div>
+        <!-- BOTTOM CARD INSTAGRAM 1 -->
+        <div class="bottom_card">
+          <article class="bottom_card_header">
+            <h2 class="bottom_card_header_title">Likes</h2>
+            <img src="images/icon-instagram.svg" alt="icon instagram" class="bottom_card_header_icon">
+          </article>
+          <article class="bottom_card_footer">
+            <h2 class="bottom_card_footer_value b_card3">5462</h2>
+            <div class="bottom_card_footer_percent">
+              <img src="images/icon-up.svg" alt="icon up" class="bottom_card_footer_percent_icon">
+              <span class="bottom_card_footer_percent_value">2257%</span>
+            </div>
+          </article>
+        </div>
+        <!-- BOTTOM CARD INSTAGRAM 2 -->
+        <div class="bottom_card">
+          <article class="bottom_card_header">
+            <h2 class="bottom_card_header_title">Profile Views</h2>
+            <img src="images/icon-instagram.svg" alt="icon instagram" class="bottom_card_header_icon">
+          </article>
+          <article class="bottom_card_footer">
+            <h2 class="bottom_card_footer_value b_card4">52k</h2>
+            <div class="bottom_card_footer_percent">
+              <img src="images/icon-up.svg" alt="icon up" class="bottom_card_footer_percent_icon">
+              <span class="bottom_card_footer_percent_value">1375%</span>
+            </div>
+          </article>
+        </div>
+        <!-- BOTTOM CARD TWITTER 1 -->
+        <div class="bottom_card">
+          <article class="bottom_card_header">
+            <h2 class="bottom_card_header_title">Retweets</h2>
+            <img src="images/icon-twitter.svg" alt="icon twitter" class="bottom_card_header_icon">
+          </article>
+          <article class="bottom_card_footer">
+            <h2 class="bottom_card_footer_value b_card5">117</h2>
+            <div class="bottom_card_footer_percent">
+              <img src="images/icon-up.svg" alt="icon up" class="bottom_card_footer_percent_icon">
+              <span class="bottom_card_footer_percent_value">303%</span>
+            </div>
+          </article>
+        </div>
+        <!-- BOTTOM CARD TWITTER 2 -->
+        <div class="bottom_card">
+          <article class="bottom_card_header">
+            <h2 class="bottom_card_header_title">Likes</h2>
+            <img src="images/icon-twitter.svg" alt="icon twitter" class="bottom_card_header_icon">
+          </article>
+          <article class="bottom_card_footer">
+            <h2 class="bottom_card_footer_value b_card6">507</h2>
+            <div class="bottom_card_footer_percent">
+              <img src="images/icon-up.svg" alt="icon up" class="bottom_card_footer_percent_icon">
+              <span class="bottom_card_footer_percent_value">553%</span>
+            </div>
+          </article>
+        </div>
+        <!-- BOTTOM CARD YOUTUBE 1 -->
+        <div class="bottom_card">
+          <article class="bottom_card_header">
+            <h2 class="bottom_card_header_title">Likes</h2>
+            <img src="images/icon-youtube.svg" alt="icon youtube" class="bottom_card_header_icon">
+          </article>
+          <article class="bottom_card_footer">
+            <h2 class="bottom_card_footer_value b_card7">107</h2>
+            <div class="bottom_card_footer_percent">
+              <img src="images/icon-down.svg" alt="icon up" class="bottom_card_footer_percent_icon">
+              <span class="bottom_card_footer_percent_value">19%</span>
+            </div>
+          </article>
+        </div>
+        <!-- BOTTOM CARD YOUTUBE 2 -->
+        <div class="bottom_card">
+          <article class="bottom_card_header">
+            <h2 class="bottom_card_header_title">Total Views</h2>
+            <img src="images/icon-youtube.svg" alt="icon youtube" class="bottom_card_header_icon">
+          </article>
+          <article class="bottom_card_footer">
+            <h2 class="bottom_card_footer_value b_card8">1407</h2>
+            <div class="bottom_card_footer_percent">
+              <img src="images/icon-down.svg" alt="icon up" class="bottom_card_footer_percent_icon">
+              <span class="bottom_card_footer_percent_value">12%</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </main>
+  </div>
+</body>
+
+</html>
