@@ -45,6 +45,7 @@ body {
     min-height: 800px;
     display: flex;
     justify-content: center;
+    align-items: center;
     font-family: 'Inter', sans-serif;
     color: var(--white-text);
     background-color: var(--white-bg);
@@ -57,11 +58,12 @@ body {
 
 /* CONTAINER STYLES */
 .container {
-    width: 100%;
-    height: auto;
+    width: 1440px;
+    height: 800px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    transform: scale(1.125);
 }
 
 /* HEADER STYLES */
