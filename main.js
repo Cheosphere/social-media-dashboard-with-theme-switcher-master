@@ -9,7 +9,6 @@ const bottomCards = document.querySelectorAll('.bottom_card')
 const followersNumber = document.querySelectorAll('.card_followers_number')
 const footerValue = document.querySelectorAll('.bottom_card_footer_value')
 
-
 toggleSwitch.addEventListener('click', () => {
     body.classList.toggle('dark_body')
     header.classList.toggle('dark_header')
